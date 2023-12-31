@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+ol, ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  background: transparent;
+  border-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+dl, dt, dd, fieldset, form, label, fieldset {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.sound-active::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 4px;
+  visibility: hidden;
+  width: 40px;
+  height: 2px;
+  background: -o-linear-gradient(45deg, #21be91 20%, #dbaeff 30%, #9b4ce1 30%) no-repeat;
+  background: linear-gradient(45deg, #21be91 20%, #dbaeff 30%, #9b4ce1 30%) no-repeat;
+  -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, .3);
+          box-shadow: 2px 3px 4px rgba(0, 0, 0, .3);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: visibility .1s ease-in-out;
+  -o-transition: visibility .1s ease-in-out;
+  transition: visibility .1s ease-in-out;
+}

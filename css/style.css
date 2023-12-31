@@ -1,0 +1,145 @@
+@import '/css/_base/_reset.css';
+@import '/css/_base/normalize.css';
+canvas {
+  display: block;
+}
+
+body {
+  font-family: "Sevillana", cursive;
+  max-width: 100vw;
+  margin: 0 auto;
+  overflow-x: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://i.ibb.co/0Bxtw37/bg-1.jpg") no-repeat center;
+}
+
+main {
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  height: 750px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 600px;
+}
+.card__bg {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+}
+.card__bg__img {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.title {
+  color: #fff;
+  position: absolute;
+  top: 50px;
+  text-align: center;
+  line-height: 40px;
+  z-index: 2;
+  transition: all 0.3s ease-out;
+}
+
+.images {
+  z-index: 2;
+}
+.images__santa {
+  position: absolute;
+  max-width: 100%;
+  z-index: 3;
+  transition: all 0.3s ease-out;
+}
+.images__tree {
+  max-width: 100%;
+  transition: all 0.3s ease-out;
+  z-index: 2;
+}
+
+.music {
+  cursor: pointer;
+  position: absolute;
+  top: 130px;
+  left: 10px;
+  width: 46px;
+  height: 46px;
+  background: url("https://i.ibb.co/ZNFLmyL/icon-music.png") no-repeat center;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.music::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 4px;
+  visibility: visible;
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(45deg, #21be91 20%, #dbaeff 30%, #9b4ce1 30%) no-repeat;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3);
+  transform: rotate(45deg);
+  transition: visibility 0.1s ease-in-out;
+  z-index: 101;
+}
+
+.audio {
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  right: -12%;
+  width: 40px;
+  height: 0;
+  background: transparent;
+  transform: rotate(45deg);
+}
+
+.title {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.title__h2 {
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+.fire {
+  position: relative;
+  animation: hell 0.1s ease-in-out infinite alternate;
+  -moz-animation: hell 0.1s ease-in-out infinite alternate;
+  -webkit-animation: hell 0.1s ease-in-out infinite alternate;
+  -o-animation: hell 0.1s ease-in-out infinite alternate;
+}
+
+@keyframes hell {
+  0% {
+    text-shadow: 0 0 5px #fefcc9, 5px -5px 5px #feec85, -10px -10px 10px #ffae34, 10px -20px 15px #ec760c, -10px -30px 20px #cd4606, 0 -40px 25px #973716, 5px -45px 20px #451b0e;
+  }
+  100% {
+    text-shadow: 0 0 5px #fefcc9, 5px -5px 5px #fefcc9, -10px -10px 10px #feec85, 11px -11px 20px #ffae34, -11px -27px 15px #ec760c, 0 -41px 30px #cd4606, 5px -45px 30px #973716;
+    left: 0.5px;
+  }
+}
+button {
+  border: transparent;
+  background: transparent;
+}/*# sourceMappingURL=style.css.map */

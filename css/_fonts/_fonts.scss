@@ -1,0 +1,111 @@
+@import '../_variables/_variables.scss';
+
+  //merry
+  .title {
+    user-select: none;
+
+    &__h2 {
+      font-size: 60px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .fire {
+    position: $relative;
+    animation: hell 0.1s ease-in-out infinite alternate;
+    -moz-animation: hell 0.1s ease-in-out infinite alternate;
+    -webkit-animation: hell 0.1s ease-in-out infinite alternate;
+    -o-animation: hell 0.1s ease-in-out infinite alternate;
+  }
+
+  @keyframes hell {
+    0% {
+      text-shadow: 0 0 5px #fefcc9,
+        5px -5px 5px #feec85,
+        -10px -10px 10px #ffae34,
+        10px -20px 15px #ec760c,
+        -10px -30px 20px #cd4606,
+        0 -40px 25px #973716,
+        5px -45px 20px #451b0e; 
+    }
+  
+    100% {
+      text-shadow: 0 0 5px #fefcc9,
+        5px -5px 5px #fefcc9,
+        -10px -10px 10px #feec85,
+        11px -11px 20px #ffae34,
+        -11px -27px 15px #ec760c,
+        0 -41px 30px #cd4606,
+        5px -45px 30px #973716;
+      left: 0.5px;
+    }
+  }
+  
+  @-moz-keyframes hell {
+    0% {
+      text-shadow: 0 0 5px #fefcc9,
+        5px -5px 5px #feec85,
+        -10px -10px 10px #ffae34,
+        10px -20px 15px #ec760c,
+        -10px -30px 20px #cd4606,
+        0 -40px 25px #973716,
+        5px -45px 20px #451b0e; 
+    }
+  
+    100% {
+      text-shadow: 0 0 5px #fefcc9,
+        5px -5px 5px #fefcc9,
+        -10px -10px 10px #feec85,
+        11px -11px 20px #ffae34,
+        -11px -27px 15px #ec760c,
+        0 -41px 30px #cd4606,
+        5px -45px 30px #973716;
+      left: 0.5px;
+    }
+  }
+  
+  @-webkit-keyframes hell {
+    0% {
+      text-shadow: 0 0 5px #fefcc9,
+        5px -5px 5px #feec85,
+        -10px -10px 10px #ffae34,
+        10px -20px 15px #ec760c,
+        -10px -30px 20px #cd4606,
+        0 -40px 25px #973716,
+        5px -45px 20px #451b0e; 
+    }
+  
+    100% {
+      text-shadow: 0 0 5px #fefcc9,
+        5px -5px 5px #fefcc9,
+        -10px -10px 10px #feec85,
+        11px -11px 20px #ffae34,
+        -11px -27px 15px #ec760c,
+        0 -41px 30px #cd4606,
+        5px -45px 30px #973716;
+      left: 0.5px;
+    }
+  }
+  
+  @-o-keyframes hell {
+    0% {
+      text-shadow: 0 0 5px #fefcc9,
+        5px -5px 5px #feec85,
+        -10px -10px 10px #ffae34,
+        10px -20px 15px #ec760c,
+        -10px -30px 20px #cd4606,
+        0 -40px 25px #973716,
+        5px -45px 20px #451b0e; 
+    }
+  
+    100% {
+      text-shadow: 0 0 5px #fefcc9,
+        5px -5px 5px #fefcc9,
+        -10px -10px 10px #feec85,
+        11px -11px 20px #ffae34,
+        -11px -27px 15px #ec760c,
+        0 -41px 30px #cd4606,
+        5px -45px 30px #973716;
+      left: 0.5px;
+    }
+  }

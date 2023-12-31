@@ -1,0 +1,100 @@
+@import '../_variables/_variables.scss';
+.container {
+  display: $flex;
+  justify-content: $center;
+  align-items: $center;
+  max-width: $devil;
+  height: 750px;
+}
+.card {
+  position: $relative;
+  display: $flex;
+  justify-content: $center;
+  align-items: $center;
+  max-width: $max;
+  height: $devil;
+    &__bg {
+      position: $absolute;
+      width: $max;
+      height: $devil;
+        &__img {
+          position: $relative;
+          z-index: 1;
+          max-width: $max;
+          border-radius: 10px;
+          }
+        }
+      }
+.title {
+  color: #fff;
+  position: $absolute;
+  top: 50px;
+  text-align: $center;
+  line-height: 40px;
+  z-index: 2;
+  transition: $universal;
+}
+
+.images {
+  z-index: 2;
+  &__santa {
+    position: $absolute;
+    max-width: $max;
+    z-index: 3;
+    transition: $universal;
+  }
+
+  &__tree {
+    max-width: $max;
+    transition: $universal;
+    z-index: 2;
+  }
+}
+
+.music {
+  cursor: pointer;
+  position: $absolute;
+  top: 130px;
+  left: 10px;
+  width: 46px;
+  height: 46px;
+  background: url('https://i.ibb.co/ZNFLmyL/icon-music.png') no-repeat center;
+  -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, .3);
+          box-shadow: 2px 3px 4px rgba(0, 0, 0, .3);
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.music::before {
+  content: "";
+  position: $absolute;
+  top: 22px;
+  left: 4px;
+  visibility: $vision;
+  width: 40px;
+  height: 2px;
+  background: -o-linear-gradient(45deg, #21be91 20%, #dbaeff 30%, #9b4ce1 30%) no-repeat;
+  background: linear-gradient(45deg, #21be91 20%, #dbaeff 30%, #9b4ce1 30%) no-repeat;
+  -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, .3);
+          box-shadow: 2px 3px 4px rgba(0, 0, 0, .3);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: visibility .1s ease-in-out;
+  -o-transition: visibility .1s ease-in-out;
+  transition: visibility .1s ease-in-out;
+  z-index: 101;
+}
+
+.audio {
+  cursor: pointer;
+  position: $absolute;
+  top: 20%;
+  right: -12%;
+  width: 40px;
+  height: 0;
+  background: $none;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}

@@ -1,0 +1,21 @@
+@import '../_variables/_variables.scss';
+canvas {
+  display: block;
+}
+
+body {
+  font-family: $fonts;
+  max-width: 100vw;
+  margin: $auto;
+  overflow-x: hidden;
+  height: 100vh;
+  display: $flex;
+  justify-content: $center;
+  align-items: $center;
+  background: url('https://i.ibb.co/0Bxtw37/bg-1.jpg') no-repeat center;
+}
+
+main {
+  padding: 20px 0;
+}
+

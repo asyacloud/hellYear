@@ -1,0 +1,8 @@
+@import '/css/_base/_reset.css', '/css/_base/normalize.css';
+@import '../css/_variables/variables.scss';
+@import '../css/_body/body.scss', '../css/_div/div.scss', '../css/_fonts/fonts.scss';
+
+button  {
+  border: $none;
+  background: $none;
+}
